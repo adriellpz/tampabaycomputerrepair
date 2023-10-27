@@ -53,7 +53,7 @@ function App() {
               </Title1>
 
               <p>Professional, Knowledgeable, and Affordable</p>
-              <a href="https://tampabaycomputerrepairllc.com/#review">
+              <a href="https://www.tampabaycomputerrepairllc.com/">
                 4.8 / 5 stars from 25 reviews ⭐️⭐️⭐️⭐️⭐️
               </a>
               <p>Mon-Sat 8:00am - 7:00pm</p>
