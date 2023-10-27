@@ -10,6 +10,7 @@ import {
   Button,
   DialogTrigger,
   Textarea,
+  DialogTitle,
 } from "@fluentui/react-components";
 
 function Appointment() {
@@ -39,12 +40,13 @@ function Appointment() {
   };
 
   return (
-    <Dialog>
+    <Dialog modalType="non-modal">
       <DialogTrigger disableButtonEnhancement>
         <Button>Book an Appointment</Button>
       </DialogTrigger>
       <DialogSurface>
         <DialogBody>
+          <DialogTitle>Book an Appointment</DialogTitle>
           <DialogContent>
             <form id="form" onSubmit={handleSubmit}>
               <div className="field">
@@ -86,11 +88,6 @@ function Appointment() {
                 </Field>
               </div>
               <DialogActions>
-                <DialogTrigger disableButtonEnhancement>
-                  <Button style={{ marginTop: "10px" }} appearance="secondary">
-                    Close
-                  </Button>
-                </DialogTrigger>
                 <Button
                   appearance="primary"
                   style={{ marginTop: "10px" }}

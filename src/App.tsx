@@ -63,27 +63,19 @@ function App() {
               <Appointment></Appointment>
             </div>
           </header>
-          <nav>
-            <ul>
-              <li>
-                <Button className="a" onClick={handleClick1}>
-                  About Us
-                </Button>
-              </li>
-
-              <li>
-                <Button className="a" onClick={handleClick2}>
-                  Our Services
-                </Button>
-              </li>
-
-              <li>
-                <Button className="a" onClick={handleClick3}>
-                  Contact Us
-                </Button>
-              </li>
-            </ul>
-          </nav>
+          <div className="nav">
+            <div className="navcontainer">
+              <Button style={{ maxWidth: "180px" }} onClick={handleClick1}>
+                About Us
+              </Button>
+              <Button style={{ maxWidth: "180px" }} onClick={handleClick2}>
+                Our Services
+              </Button>
+              <Button style={{ maxWidth: "180px" }} onClick={handleClick3}>
+                Contact Us
+              </Button>
+            </div>
+          </div>
           <section ref={elementRef1} id="about">
             <h2>We come to you</h2>
 
@@ -100,7 +92,7 @@ function App() {
 
             <h3>Who is Tampa Bay Computer Repair?</h3>
 
-            <p>
+            <p className="p">
               We are your Local Mobile Computer Repair Engineers that provides
               fast and affordable solutions to all your computer problems. Our
               team of experts is knowledgeable and experienced in handling all
